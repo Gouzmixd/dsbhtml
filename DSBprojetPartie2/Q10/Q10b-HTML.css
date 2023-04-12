@@ -15,11 +15,24 @@ body {
 	border-radius: 8px;
 	padding:50px;
 	margin:0px;
+	margin-left:25px;
+	margin-right:25px;
 	margin-bottom:15px;
 	width:auto;
 	background-color:white;
 	overflow: hidden;
 	overflow-wrap: break-word;
+}
+
+.footer {
+  position: fixed;
+  font-family: "Helvetica", sans-serif;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
 }
 
 h2 {
@@ -189,7 +202,8 @@ th {
 
 input + label {             /* box with rounded corner */
   background: #EEE;
-  padding: 4px;
+  padding: 8px;
+  font-family: "Helvetica",sans-serif;
   border-radius: 8px 8px 0 0;
   position: relative;
   top: 1px;
@@ -203,3 +217,17 @@ input ~ .tab {          /* grey line between tab and contents */
   padding: 12px;
 }
 /* tables.html */
+
+/* toolbox */
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* toolbox */
