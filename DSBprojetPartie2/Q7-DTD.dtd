@@ -1,0 +1,17 @@
+<!ELEMENT racine (glossaire*,jeuvideo*)>
+
+<!ELEMENT glossaire (mot)+>
+<!ELEMENT mot (#PCDATA)>
+<!ATTLIST mot def CDATA #REQUIRED>
+<!ATTLIST glossaire auteur CDATA #IMPLIED>
+
+<!ELEMENT jeuvideo (nom,date,notejvc?,nomdev,nomedi)>
+<!ATTLIST jeuvideo id CDATA #REQUIRED>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT notejvc (#PCDATA)>
+<!ELEMENT nomdev (#PCDATA)>
+<!ELEMENT nomedi (#PCDATA)>
+
+
+

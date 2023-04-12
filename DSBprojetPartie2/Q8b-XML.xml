@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE carnet SYSTEM "Q7-DTD.dtd">
+<racine>
+	<glossaire>
+		<mot def="MCD">MCD (modèle conceptuel de données)</mot>
+		<mot def="MOCODO">MOCODO (Modélisation Conceptuelle de Données)</mot>
+	</glossaire>
+	<jeuvideo id="RMGE01">
+		<nom>Super Mario Galaxy</nom>
+		<date>2007-11-01</date>
+		<notejvc>19/20</notejvc>
+		<nomdev>Nintendo</nomdev>
+		<nomedi>Nintendo</nomedi>
+	</jeuvideo>
+</racine>

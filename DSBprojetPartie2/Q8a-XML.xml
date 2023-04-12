@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE carnet SYSTEM "Q7-DTD.dtd">
+<racine>
+	<glossaire>
+		<mot def="MCD">MCD (modèle conceptuel de données)</mot>
+		<mot def="MOCODO">MOCODO (Modélisation Conceptuelle de Données)</mot>
+	</glossaire>
+	<glossaire>
+		<mot def="MCD"></mot>
+		<mot def="MOCODO">MOCODO (Modélisation Conceptuelle de Données)</mot>
+	</glossaire>
+</racine>
