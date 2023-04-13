@@ -156,6 +156,18 @@ input ~ .tab {
 .tab.contentJV img {
 	max-width: 30%;
 }
+.tab.contentEDI img {
+	max-width: 30%;
+}
+.tab.contentDEV img {
+	max-width: 40%;
+}
+.tab.contentGENRE img {
+	max-width: 30%;
+}
+.tab.contentGAMEW img {
+	max-width: 30%;
+}
 
 .SMGimg:hover ~ table tbody .SMG {
 	background-color: #9f55d9;
@@ -168,6 +180,27 @@ input ~ .tab {
 .CRimg:hover ~ table tbody .CR {
 	background-color: #9f55d9;
 }
+.NINTimg:hover ~ table tbody .NINTENDO {
+	background-color: #9f55d9;
+}
+
+.VALimg:hover ~ table tbody .VALVE {
+	background-color: #9f55d9;
+}
+
+.SCimg:hover ~ table tbody .SUPERCELL {
+	background-color: #9f55d9;
+}
+
+.HPimg:hover ~ table tbody .HP {
+	background-color: #9f55d9;
+}
+
+.RGimg:hover ~ table tbody .RG {
+	background-color: #9f55d9;
+}
+
+
 
 
 .tab.contentEDI {

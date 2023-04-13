@@ -1,4 +1,4 @@
-<!ELEMENT racine (glossaire*,jeuvideo*)>
+<!ELEMENT racine (glossaire?,jeuvideo*)>
 
 <!ELEMENT glossaire (mot)+>
 <!ELEMENT mot (#PCDATA)>
