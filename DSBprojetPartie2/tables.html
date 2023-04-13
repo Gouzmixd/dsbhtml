@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+               "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>DSB2 | BDD</title>
+		<link rel="stylesheet" type="text/css" href="Q10b-HTML.css" />
+		<link rel="icon" href="src\pouce.ico" type="image/x-icon"/>
+	</head>
+
+	<body>
+
+		<ul>
+	        <li><a href="Q9-HTML.html">Accueil</a></li>
+	        <li><a href="mcd.html">MCD</a></li>
+	        <li><a href="xml.html">XML</a></li>
+	        <li><a class="active" href="tables.html">BDD</a></li>
+	        <li><a href="toolbox.html">Toolbox</a></li>
+	    </ul>
+
+
+		<div class="header">
+			<h2>Exemple de base de données</h2>
+		</div>
+		<div class="para" style="background-color: #dedede;">
+			<input type="radio" name="tabs" id="tabJV" checked="checked" />
+			<label for="tabJV">Jeu-vidéo</label>
+
+			<input type="radio" name="tabs" id="tabEDI" />
+			<label for="tabEDI">Editeur</label>
+
+			<input type="radio" name="tabs" id="tabDEV" />
+			<label for="tabDEV">Développeur</label>
+
+			<input type="radio" name="tabs" id="tabGENRE" />
+			<label for="tabGENRE">Genre</label>
+
+			<input type="radio" name="tabs" id="tabGAMEW" />
+			<label for="tabGAMEW">Game Awards</label>
+
+			<div class="tab contentJV">
+				<img style="margin-left: 30px;"class ="SMGimg" src="src\SMG.jpg" alt="SMG"/>
+				<img class = "CSGOimg"src="src\CSGO-Competitive.avif" alt="CSGO"/>
+				<img class = "CRimg"src="src\CR.jpg" alt="CR"/>
+				<table>
+					<thead>
+						<tr>
+							<th colspan="7" style="background-color: #470778;color: white;text-align: center;">Jeu-vidéo</th>
+						</tr>
+						<tr>
+							<th>ID</th>
+							<th>Nom</th>
+							<th>Date de sortie</th>
+							<th>Note JVC</th>
+							<th>Studio de développement</th>
+							<th>Editeur</th>
+							<th>Thème</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="SMG">
+							<td>RMGE01</td>
+							<td>Super Mario Galaxy</td>
+							<td>2007-11-01</td>
+							<td>19/20</td>
+							<td>Nintendo</td>
+							<td>Nintendo</td>
+							<td>T01</td>
+						</tr>
+						<tr class="CSGO">
+							<td>CSGO</td>
+							<td>Counter-Strike: Global Offensive</td>
+							<td>2012-08-21</td>
+							<td>17/20</td>
+							<td>Valve, Hidden Path Entertainment</td>
+							<td>Valve</td>
+							<td>T02</td>
+						</tr>
+						<tr class="CR">
+							<td>CR</td>
+							<td>Clash Royale</td>
+							<td>2016-01-04</td>
+							<td>18/20</td>
+							<td>Supercell</td>
+							<td>Supercell</td>
+							<td>T02</td>
+						</tr>
+					</tbody>
+				</table>
+
+			</div>
+
+			<div class="tab contentEDI">
+				<table>
+					<thead>
+						<tr>
+							<th colspan="5" style="background-color: #470778;color: white;text-align: center;">Editeur</th>
+						</tr>
+						<tr>
+							<th>Nom</th>
+							<th>Date de création</th>
+							<th>Siège social</th>
+							<th>Jeu principal</th>
+							<th>Site web</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="NINTENDO">
+							<td>RMGE01</td>
+							<td>Super Mario Galaxy</td>
+							<td>2007-11-01</td>
+							<td>19/20</td>
+							<td>Nintendo</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="tab contentDEV">
+				<table>
+					<thead>
+						<tr>
+							<th colspan="5" style="background-color: #470778;color: white;text-align: center;">Studio de développement</th>
+						</tr>
+						<tr>
+							<th>Nom</th>
+							<th>Date de création</th>
+							<th>Siège social</th>
+							<th>Jeu principal</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="NINTENDO">
+							<td>RMGE01</td>
+							<td>Super Mario Galaxy</td>
+							<td>2007-11-01</td>
+							<td>19/20</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div class="tab contentGENRE">
+				<table>
+					<thead>
+						<tr>
+							<th colspan="5" style="background-color: #470778;color: white;text-align: center;">Genre</th>
+						</tr>
+						<tr>
+							<th>IDGenre</th>
+							<th>Type</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="NINTENDO">
+							<td>RMGE01</td>
+							<td>Super Mario Galaxy</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table>
+					<thead>
+						<tr>
+							<th colspan="5" style="background-color: #470778;color: white;text-align: center;">Thème</th>
+						</tr>
+						<tr>
+							<th>IDJeu</th>
+							<th>Domaine</th>
+							<th>Développement Durable</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="NINTENDO">
+							<td>RMGE01</td>
+							<td>Super Mario Galaxy</td>
+							<td>2007-11-01</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="tab contentGAMEW">
+				<table>
+					<thead>
+						<tr>
+							<th colspan="5" style="background-color: #470778;color: white;text-align: center;">Thème</th>
+						</tr>
+						<tr>
+							<th>ID</th>
+							<th>Année</th>
+							<th>Libellé</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="NINTENDO">
+							<td>RMGE01</td>
+							<td>Super Mario Galaxy</td>
+							<td>2007-11-01</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		
+		<div class="footer">Matthias Lostys et Jules Delapart | Projet DSB</div>
+	</body>
+</html>
+

@@ -25,6 +25,7 @@ body {
 }
 
 .footer {
+	margin-top: 30px;
   position: fixed;
   font-family: "Helvetica", sans-serif;
   left: 0;
@@ -126,13 +127,17 @@ input {
 	display: none; 
 }
 input + label { 
-	display: inline-block 
+	display: inline-block;
+	position: sticky; 
 }
 input ~ .tab { 
 	display: none 
 }  
 
 /* show contents only for selected tab */
+#tabGAMEW:checked ~ .tab.contentGAMEW,
+#tabGENRE:checked ~ .tab.contentGENRE,
+#tabTHEME:checked ~ .tab.contentTHEME, 
 #tabJV:checked ~ .tab.contentJV,
 #tabEDI:checked ~ .tab.contentEDI,
 #tabDEV:checked ~ .tab.contentDEV { display: block; }
@@ -169,16 +174,48 @@ input ~ .tab {
 	border-radius: 0px 8px 8px 8px;
 	background-color: white;
 	box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
-	padding: 25px;
+	width: auto;
+	margin:0px;
+	margin-bottom:15px;
+	padding:50px;
+	overflow: hidden;
 }
 .tab.contentDEV {
 	border-radius: 0px 8px 8px 8px;
 	background-color: white;
 	box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
-	padding: 25px;
+	width: auto;
+	margin:0px;
+	margin-bottom:15px;
+	padding:50px;
+	overflow: hidden;
 }
 
+.tab.contentGAMEW {
+	border-radius: 0px 8px 8px 8px;
+	background-color: white;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+	width: auto;
+	margin:0px;
+	margin-bottom:15px;
+	padding:50px;
+	overflow: hidden;
+}
+
+.tab.contentGENRE {
+	border-radius: 0px 8px 8px 8px;
+	background-color: white;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+	width: auto;
+	margin:0px;
+	margin-bottom:15px;
+	padding:50px;
+	overflow: hidden;
+}
+
+
 table {
+	border: 5px solid;
 	margin-top: auto;
 	margin-bottom: auto;
 	align-content: center;
@@ -187,11 +224,13 @@ table {
 	margin-right: auto;
 	border-collapse: collapse;
 	background-color: #c4c4c4;
+	border-radius: 8px;
+	box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
 }
 
-table, th, td {
-	border: 1px solid ;
-	padding: 15px;
+td {
+	border: 3px solid ;
+	padding: 10px;
 }
 
 th {
@@ -205,7 +244,7 @@ input + label {             /* box with rounded corner */
   padding: 8px;
   font-family: "Helvetica",sans-serif;
   border-radius: 8px 8px 0 0;
-  position: relative;
+  position: static;
   top: 1px;
 }
 input:checked + label {     /* white background for selected tab */
