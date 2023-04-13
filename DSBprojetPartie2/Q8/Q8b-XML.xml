@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="iso-8859-1" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE carnet SYSTEM "Q7-DTD.dtd">
+<?xml-stylesheet href="C:\Users\mattm\dsbhtml\DSBprojetPartie2\Q10\Q10a-XML.css"?>
 <racine>
 	<glossaire>
 		<mot def="MCD">MCD (modèle conceptuel de données)</mot>

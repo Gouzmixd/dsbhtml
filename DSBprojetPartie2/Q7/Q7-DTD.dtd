@@ -13,5 +13,7 @@
 <!ELEMENT nomdev (#PCDATA)>
 <!ELEMENT nomedi (#PCDATA)>
 
+<!ELEMENT editeur (nom,date,)
+
 
 
