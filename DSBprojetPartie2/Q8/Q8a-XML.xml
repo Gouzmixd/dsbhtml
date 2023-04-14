@@ -6,7 +6,7 @@
 		<mot def="CSS">CSS (Cascading Style Sheet)</mot>
 		<mot def="XHTML">XHTML (Extensible HyperText Markup Language)</mot>
 	</glossaire>
-	<glossaire>
+	<glossaire auteur="Moi">
 		<mot def="DTD">DTD (Document Type Definition)</mot>
 		<mot def="XML">XML (Extensible Markup Language)</mot>
 	</glossaire>
