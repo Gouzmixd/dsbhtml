@@ -21,8 +21,8 @@
     </div>
     <div class="para" style="background-color: #efd1ff;">
       <img style="margin-left:25px;max-width: 45%;" src="src\mcd.png" alt="MCD"/>
-      <div class="para" style="background-color:#630ee3;padding:30px;max-width: 43%;text-align:center;font-size: 150%;font-family:Arial,sans-serif;float:right;">
-        Explication des éléments
+      <div class="para" style="background-color:#630ee3;color:white;padding:30px;max-width: 43%;text-align:center;font-size: 150%;font-family:Arial,sans-serif;float:right;">
+        <b>Explication des éléments</b>
       </div>
       <div class="para" style="background-color:#b3ffc3;padding:30px;max-width: 43%;float:right">
         <h3>Jeux-vidéos</h3>
@@ -38,59 +38,46 @@
       <div class="para" style="background-color:#b3ffc3;padding:30px;max-width: 43%;float:right">
         <h3>Editeur</h3>
         <ol>
-          <li><b>ID</b> : Clé primaire de l'élément, permet d'identifier les différents jeux même si les noms sont les mêmes.<br/></li>
-          <li><b>Nom</b> : Nom attribué du jeu.<br/></li>
-          <li><b>Date de sortie</b> : Date de la sortie du jeu, la première version disponible au public si il en existe plusieurs.<br/></li>
-          <li><b>Note JVC</b> : Note attribuée au jeu par le site référence jeuxvideos.com.<br/></li>
-          <li><b>PEGI</b> : Le système d'évaluation européen des jeux vidéo qui permet de les classer par âges pour informer les consommateurs.<br/></li>
-          <li><b>RECOMPENSE</b> : L'identifiant vers la récompense attribuée au jeu aux Game Awards, si il en a reçu.<br/></li>
+          <li><b>Nom</b> : Clé primaire de l'élément, correspond aun nom de l'entreprise, il est forcément unique car déposé.<br/></li>
+          <li><b>Date de création</b> : Correspond à la date de création référencée de l'entreprise, le mois et l'année uniquement si le jour n'est pas indiqué<br/></li>
+          <li><b>Siège social</b> : Ville ou est situé l'entreprise ou son domicile juridique.<br/></li>
+          <li><b>Jeu principal</b> : Le jeu <br/></li>
+          <li><b>Site</b> : <br/></li>
         </ol>
       </div> 
       <div>
-        <div class="para" style="background-color:#b3ffc3;padding:30px;max-width: 43%;float:left">
+        <div class="para" style="background-color:#b3ffc3;padding:30px;max-width: 40%;float:left">
           <h3>Studio de développement</h3>
           <ol>
-            <li><b>ID</b> : Clé primaire de l'élément, permet d'identifier les différents jeux même si les noms sont les mêmes.<br/></li>
-            <li><b>Nom</b> : Nom attribué du jeu.<br/></li>
-            <li><b>Date de sortie</b> : Date de la sortie du jeu, la première version disponible au public si il en existe plusieurs.<br/></li>
-            <li><b>Note JVC</b> : Note attribuée au jeu par le site référence jeuxvideos.com.<br/></li>
-            <li><b>PEGI</b> : Le système d'évaluation européen des jeux vidéo qui permet de les classer par âges pour informer les consommateurs.<br/></li>
-            <li><b>RECOMPENSE</b> : L'identifiant vers la récompense attribuée au jeu aux Game Awards, si il en a reçu.<br/></li>
-          </ol>
+            <li><b>Nom</b> : <br/></li>
+            <li><b>Date de création</b> : <br/></li>
+            <li><b>Siège social</b> : <br/></li>
+            <li><b>Jeu principal</b> : <br/></li>
+        </ol>
         </div> 
-        <div class="para" style="background-color:#b3ffc3;padding:30px;max-width: 43%;float:right">
+        <div class="para" style="background-color:#b3ffc3;padding:30px;max-width: 40%;float:right">
           <h3>Game Awards</h3>
           <ol>
-            <li><b>ID</b> : Clé primaire de l'élément, permet d'identifier les différents jeux même si les noms sont les mêmes.<br/></li>
-            <li><b>Nom</b> : Nom attribué du jeu.<br/></li>
-            <li><b>Date de sortie</b> : Date de la sortie du jeu, la première version disponible au public si il en existe plusieurs.<br/></li>
-            <li><b>Note JVC</b> : Note attribuée au jeu par le site référence jeuxvideos.com.<br/></li>
-            <li><b>PEGI</b> : Le système d'évaluation européen des jeux vidéo qui permet de les classer par âges pour informer les consommateurs.<br/></li>
-            <li><b>RECOMPENSE</b> : L'identifiant vers la récompense attribuée au jeu aux Game Awards, si il en a reçu.<br/></li>
+            <li><b>ID</b> : Clé primaire de l'élément, permet d'identifier les différents prix même si les libellés sont les mêmes.<br/></li>
+            <li><b>Année</b> : Année à laquelle la récompense a été décernée.<br/></li>
+            <li><b>Libellé</b> : Le nom de la récompense obtenue aux Game Awards.<br/></li>
           </ol>
         </div> 
       </div>
       <div>
-        <div class="para" style="background-color:#b3ffc3;padding:30px;max-width: 43%;float:left">
+        <div class="para" style="background-color:#b3ffc3;padding:30px;max-width: 40%;float:left">
           <h3>Thème</h3>
           <ol>
-            <li><b>ID</b> : Clé primaire de l'élément, permet d'identifier les différents jeux même si les noms sont les mêmes.<br/></li>
-            <li><b>Nom</b> : Nom attribué du jeu.<br/></li>
-            <li><b>Date de sortie</b> : Date de la sortie du jeu, la première version disponible au public si il en existe plusieurs.<br/></li>
-            <li><b>Note JVC</b> : Note attribuée au jeu par le site référence jeuxvideos.com.<br/></li>
-            <li><b>PEGI</b> : Le système d'évaluation européen des jeux vidéo qui permet de les classer par âges pour informer les consommateurs.<br/></li>
-            <li><b>RECOMPENSE</b> : L'identifiant vers la récompense attribuée au jeu aux Game Awards, si il en a reçu.<br/></li>
+            <li><b>IDJeu</b> : Clé primaire de l'élément, permet d'identifier les différents prix même si les libellés sont les mêmes.<br/></li>
+            <li><b>Thème</b> : Année à laquelle la récompense a été décernée.<br/></li>
+            <li><b>Dvlpmt Durable</b> : Le nom de la récompense obtenue aux Game Awards.<br/></li>
           </ol>
         </div> 
-        <div class="para" style="background-color:#b3ffc3;padding:30px;max-width: 43%;float:right">
+        <div class="para" style="background-color:#b3ffc3;padding:30px;max-width: 40%;float:right">
           <h3>Genre</h3>
           <ol>
-            <li><b>ID</b> : Clé primaire de l'élément, permet d'identifier les différents jeux même si les noms sont les mêmes.<br/></li>
-            <li><b>Nom</b> : Nom attribué du jeu.<br/></li>
-            <li><b>Date de sortie</b> : Date de la sortie du jeu, la première version disponible au public si il en existe plusieurs.<br/></li>
-            <li><b>Note JVC</b> : Note attribuée au jeu par le site référence jeuxvideos.com.<br/></li>
-            <li><b>PEGI</b> : Le système d'évaluation européen des jeux vidéo qui permet de les classer par âges pour informer les consommateurs.<br/></li>
-            <li><b>RECOMPENSE</b> : L'identifiant vers la récompense attribuée au jeu aux Game Awards, si il en a reçu.<br/></li>
+            <li><b>IDGenre</b> : Clé primaire de l'élément, permet d'identifier les différents prix même si les libellés sont les mêmes.<br/></li>
+            <li><b>Type</b> : Année à laquelle la récompense a été décernée.<br/></li>
           </ol>
         </div> 
       </div>
