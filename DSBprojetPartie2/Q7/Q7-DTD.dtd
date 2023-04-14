@@ -5,15 +5,19 @@
 <!ATTLIST mot def CDATA #REQUIRED>
 <!ATTLIST glossaire auteur CDATA #IMPLIED>
 
+<!ELEMENT base (jeuvideo,glossaire*)>
+
+
 <!ELEMENT jeuvideo (nom,date,notejvc?,nomdev,nomedi)>
 <!ATTLIST jeuvideo id CDATA #REQUIRED>
+
 <!ELEMENT nom (#PCDATA)>
 <!ELEMENT date (#PCDATA)>
 <!ELEMENT notejvc (#PCDATA)>
+<!ELEMENT pegi (#PCDATA)>
+<!ELEMENT recompense (#PCDATA)>
 <!ELEMENT nomdev (#PCDATA)>
 <!ELEMENT nomedi (#PCDATA)>
-
-<!ELEMENT editeur (nom,date,)
 
 
 

@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE carnet SYSTEM "Q7-DTD.dtd">
-<?xml-stylesheet href="C:\Users\mattm\dsbhtml\DSBprojetPartie2\Q10\Q10a-XML.css"?>
+<?xml-stylesheet href="./Q10a-XML.css"?>
 <racine>
 	<glossaire>
-		<mot def="MCD">MCD (modèle conceptuel de données)</mot>
+		<mot def="JV">JV (Jeux Vidéos)</mot>
 		<mot def="MOCODO">MOCODO (Modélisation Conceptuelle de Données)</mot>
 	</glossaire>
 	<jeuvideo id="RMGE01">
 		<nom>Super Mario Galaxy</nom>
 		<date>2007-11-01</date>
 		<notejvc>19/20</notejvc>
+		<pegi>3</pegi>
+		<recompense>N/A</recompense>
 		<nomdev>Nintendo</nomdev>
 		<nomedi>Nintendo</nomedi>
 	</jeuvideo>

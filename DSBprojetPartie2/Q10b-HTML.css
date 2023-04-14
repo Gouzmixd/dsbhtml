@@ -14,7 +14,7 @@ body {
 	box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
 	border-radius: 8px;
 	padding:50px;
-	margin:0px;
+	margin-top:0px;
 	margin-left:25px;
 	margin-right:25px;
 	margin-bottom:15px;
@@ -267,6 +267,7 @@ td {
 }
 
 th {
+	border: 3px solid ;
 	text-align: left;
 	background-color: violet;
   color: white;

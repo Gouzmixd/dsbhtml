@@ -19,12 +19,12 @@
     <div class="header">
       <h2>Modèle Conceptuel de Données</h2>
     </div>
-    <div class="para" style="background-color: #efd1ff;">
+    <div class="para" style="background-color: #fbedff;">
       <img style="margin-left:25px;max-width: 45%;" src="src\mcd.png" alt="MCD"/>
       <div class="para" style="background-color:#630ee3;color:white;padding:30px;max-width: 43%;text-align:center;font-size: 150%;font-family:Arial,sans-serif;float:right;">
         <b>Explication des éléments</b>
       </div>
-      <div class="para" style="background-color:#b3ffc3;padding:30px;max-width: 43%;float:right">
+      <div class="para" style="background-color:#b3ffc3;padding:30px;max-width: 40%;float:right">
         <h3>Jeux-vidéos</h3>
         <ol>
           <li><b>ID</b> : Clé primaire de l'élément, permet d'identifier les différents jeux même si les noms sont les mêmes.<br/></li>
@@ -35,24 +35,24 @@
           <li><b>RECOMPENSE</b> : L'identifiant vers la récompense attribuée au jeu aux Game Awards, si il en a reçu.<br/></li>
         </ol>
       </div> 
-      <div class="para" style="background-color:#b3ffc3;padding:30px;max-width: 43%;float:right">
+      <div class="para" style="background-color:#b3ffc3;padding:30px;max-width: 40%;float:right">
         <h3>Editeur</h3>
         <ol>
           <li><b>Nom</b> : Clé primaire de l'élément, correspond aun nom de l'entreprise, il est forcément unique car déposé.<br/></li>
           <li><b>Date de création</b> : Correspond à la date de création référencée de l'entreprise, le mois et l'année uniquement si le jour n'est pas indiqué<br/></li>
           <li><b>Siège social</b> : Ville ou est situé l'entreprise ou son domicile juridique.<br/></li>
-          <li><b>Jeu principal</b> : Le jeu <br/></li>
-          <li><b>Site</b> : <br/></li>
+          <li><b>Jeu principal</b> : Le plus gros jeu de l'entreprise, défini par le nombre de ventes.<br/></li>
+          <li><b>Site</b> : Le site web de l'entreprise si il existe.<br/></li>
         </ol>
       </div> 
       <div>
         <div class="para" style="background-color:#b3ffc3;padding:30px;max-width: 40%;float:left">
           <h3>Studio de développement</h3>
           <ol>
-            <li><b>Nom</b> : <br/></li>
-            <li><b>Date de création</b> : <br/></li>
-            <li><b>Siège social</b> : <br/></li>
-            <li><b>Jeu principal</b> : <br/></li>
+            <li><b>Nom</b> : Clé primaire de l'élément, correspond aun nom de l'entreprise, il est forcément unique car déposé.<br/></li>
+            <li><b>Date de création</b> : Correspond à la date de création référencée de l'entreprise, le mois et l'année uniquement si le jour n'est pas indiqué<br/></li>
+            <li><b>Siège social</b> : Ville ou est situé l'entreprise ou son domicile juridique.<br/></li>
+            <li><b>Jeu principal</b> : Le plus gros jeu de l'entreprise, défini par le nombre de ventes.<br/></li>
         </ol>
         </div> 
         <div class="para" style="background-color:#b3ffc3;padding:30px;max-width: 40%;float:right">
@@ -68,19 +68,30 @@
         <div class="para" style="background-color:#b3ffc3;padding:30px;max-width: 40%;float:left">
           <h3>Thème</h3>
           <ol>
-            <li><b>IDJeu</b> : Clé primaire de l'élément, permet d'identifier les différents prix même si les libellés sont les mêmes.<br/></li>
-            <li><b>Thème</b> : Année à laquelle la récompense a été décernée.<br/></li>
-            <li><b>Dvlpmt Durable</b> : Le nom de la récompense obtenue aux Game Awards.<br/></li>
+            <li><b>IDJeu</b> : Clé primaire de l'élément (étrangère), l'identifiant ID d'un jeu vidéo.<br/></li>
+            <li><b>Thème</b> : Correspond aux thèmes de l'oeuvre, à ne pas confondre avec le genre.<br/></li>
+            <li><b>Dvlpmt Durable</b> : Explicite l'abord du développement durable dans l'oeuvre.<br/></li>
           </ol>
         </div> 
         <div class="para" style="background-color:#b3ffc3;padding:30px;max-width: 40%;float:right">
           <h3>Genre</h3>
           <ol>
-            <li><b>IDGenre</b> : Clé primaire de l'élément, permet d'identifier les différents prix même si les libellés sont les mêmes.<br/></li>
-            <li><b>Type</b> : Année à laquelle la récompense a été décernée.<br/></li>
+            <li><b>IDGenre</b> : Clé primaire de l'élément, permet d'identifier les différents genre de jeux.<br/></li>
+            <li><b>Type</b> : Un genre en particulier (exemple disponible dans BDD).<br/></li>
           </ol>
         </div> 
       </div>
+      <div class="para" style="background-color:#edb5ff;padding:30px;max-width: 40%;float:left">
+          <h3>Relations</h3>
+          <ol>
+            <li><b>développé par</b> : <div style="display:inline-block;text-decoration: underline;">"JEU VIDEO (1,1) -> STUDIO DEV (0,N)"</div> relie un studio avec son ou ses jeux.<br/></li>
+            <li><b>édité par</b> : <div style="display:inline-block;text-decoration: underline;">"JEU VIDEO (1,1) -> EDITEUR (0,N)"</div> relie un éditeur avec son jeu. La relation existe directement dans les éléments grace à l'attribut "Jeu principal"<br/></li>
+            <li><b>possède</b> : <div style="display:inline-block;text-decoration: underline;">"EDITEUR (1,N) -> STUDIO DEVELOPPEMENT"</div> Un éditeur relié a son ou ses studios.<br/></li>
+            <li><b>a obtenu</b> : <div style="display:inline-block;text-decoration: underline;">"JEU VIDEO (0,N) -> GAME AWARDS (1,1)"</div> Relie un jeu-vidéo à sa récompense si il en a obtenue une, relation intégrée au premier élément.<br/></li>
+            <li><b>a pour thème</b> : <div style="display:inline-block;text-decoration: underline;">"JEU VIDEO (1,1) -> THEME (1,N)"</div> Relie un jeu-vidéo à son thème, relation intégrée au premier élément.<br/></li>
+            <li><b>a pour genre</b> : <div style="display:inline-block;text-decoration: underline;">"THEME (1,N) -> GENRE (0,N)"</div> Relie un thème (et donc un jeu vidéo) avec un ou plusieurs genres, mais il se peut qu'un genre ne soit pas représenté dans la base.<br/></li>
+          </ol>
+        </div> 
     </div>
     <p>
       <a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Strict" height="31" width="88" /></a>

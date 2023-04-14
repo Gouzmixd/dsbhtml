@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE carnet SYSTEM "Q7-DTD.dtd">
-<?xml-stylesheet href="C:\Users\mattm\dsbhtml\DSBprojetPartie2\Q10\Q10a-XML.css"?>
+<?xml-stylesheet href="./Q10a-XML.css"?>
 <racine>
 	<glossaire>
-		<mot def="MCD">MCD (modèle conceptuel de données)</mot>
-		<mot def="MOCODO">MOCODO (Modélisation Conceptuelle de Données)</mot>
+		<mot def="CSS">CSS (Cascading Style Sheet)</mot>
+		<mot def="XHTML">XHTML (Extensible HyperText Markup Language)</mot>
 	</glossaire>
 	<glossaire>
-		<mot def="MCD"></mot>
-		<mot def="MOCODO">MOCODO (Modélisation Conceptuelle de Données)</mot>
+		<mot def="DTD">DTD (Document Type Definition)</mot>
+		<mot def="XML">XML (Extensible Markup Language)</mot>
 	</glossaire>
 </racine>

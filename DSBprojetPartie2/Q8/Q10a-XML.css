@@ -1,0 +1,183 @@
+racine {
+	display: block;
+	margin-top:45px;
+	margin-left: 15% ;
+	margin-right: 15% ;
+	font-family:Arial,sans-serif; color:black;
+	font-size:15pt;
+	background:url(montagnes.gif) repeat-x;
+}
+glossaire {
+	display: block;
+	border-collapse: collapse;
+	margin-top: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding: 5px;
+	background: rgb(210, 210, 210);
+}
+mot {
+	display: block;
+	border: solid black;
+}
+
+mot:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+jeuvideo {
+	border: solid grey;
+	background-color: black;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	display: block;
+	width: 100%;
+}
+
+jeuvideo nom {
+	background-color: grey;
+	display: block;
+	text-align: center;
+	color: black;
+	padding:10px;
+	margin-top: 10px;
+	height:60px;
+}
+jeuvideo nom:before {
+	content:url(./mario-dance-resize.gif);
+	margin-right: 10px;
+	float: left;
+}
+jeuvideo nom:after {
+	content:url(./mario-dance-resize.gif);
+	margin-left: 10px;
+	float: right;
+}
+
+jeuvideo date {
+	background-color: grey;
+	display: block;
+	text-align: center;
+	color: black;
+	padding:10px;
+	margin-top: 10px;
+	height:60px;
+}
+jeuvideo date:before {
+	content:url(./mario-dance-resize.gif);
+	margin-right: 10px;
+	float: left;
+}
+jeuvideo date:after {
+	content:url(./mario-dance-resize.gif);
+	margin-left: 10px;
+	margin-top: 10px;
+	float: right;
+}
+
+jeuvideo notejvc {
+	background-color: grey;
+	display: block;
+	text-align: center;
+	color: black;
+	padding:10px;
+	margin-top: 10px;
+	height:60px;
+}
+jeuvideo notejvc:before {
+	content:url(./mario-dance-resize.gif);
+	margin-right: 10px;
+	float: left;
+}
+jeuvideo notejvc:after {
+	content:url(./mario-dance-resize.gif);
+	margin-left: 10px;
+	margin-top: 10px;
+	float: right;
+}
+
+jeuvideo nomedi {
+	background-color: grey;
+	display: block;
+	text-align: center;
+	color: black;
+	padding:10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height:60px;
+}
+jeuvideo nomedi:before {
+	content:url(./mario-dance-resize.gif);
+	margin-right: 10px;
+	float: left;
+}
+jeuvideo nomedi:after {
+	content:url(./mario-dance-resize.gif);
+	margin-left: 10px;
+	margin-top: 10px;
+	float: right;
+}
+
+jeuvideo nomdev {
+	background-color: grey;
+	display: block;
+	text-align: center;
+	color: black;
+	padding:10px;
+	margin-top: 10px;
+	height:60px;
+}
+jeuvideo nomdev:before {
+	content:url(./mario-dance-resize.gif);
+	margin-right: 10px;
+	float: left;
+}
+jeuvideo nomdev:after {
+	content:url(./mario-dance-resize.gif);
+	margin-left: 10px;
+	margin-top: 10px;
+	float: right;
+}
+
+jeuvideo pegi {
+	background-color: grey;
+	display: block;
+	text-align: center;
+	color: black;
+	padding:10px;
+	margin-top: 10px;
+	height:60px;
+}
+jeuvideo pegi:before {
+	content:url(./mario-dance-resize.gif);
+	margin-right: 10px;
+	float: left;
+}
+jeuvideo pegi:after {
+	content:url(./mario-dance-resize.gif);
+	margin-left: 10px;
+	margin-top: 10px;
+	float: right;
+}
+
+jeuvideo recompense {
+	background-color: grey;
+	display: block;
+	text-align: center;
+	color: black;
+	padding:10px;
+	margin-top: 10px;
+	height:60px;
+}
+jeuvideo recompense:before {
+	content:url(./mario-dance-resize.gif);
+	margin-right: 10px;
+	float: left;
+}
+jeuvideo recompense:after {
+	content:url(./mario-dance-resize.gif);
+	margin-left: 10px;
+	margin-top: 10px;
+	float: right;
+}
