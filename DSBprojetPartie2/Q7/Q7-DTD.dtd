@@ -1,4 +1,4 @@
-<!ELEMENT racine (glossaire?,jeuvideo*)>
+<!ELEMENT racine (glossaire?,jeuvideo*,glossaire*)>
 
 <!ELEMENT glossaire (mot)+>
 <!ELEMENT mot (#PCDATA)>
@@ -18,6 +18,9 @@
 <!ELEMENT recompense (#PCDATA)>
 <!ELEMENT nomdev (#PCDATA)>
 <!ELEMENT nomedi (#PCDATA)>
+
+
+
 
 
 

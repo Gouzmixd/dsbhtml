@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE carnet SYSTEM "Q7-DTD.dtd">
+<!DOCTYPE racine SYSTEM "Q7-DTD.dtd">
 <?xml-stylesheet href="./Q10a-XML.css"?>
 <racine>
 	<glossaire>
